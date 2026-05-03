@@ -5958,3 +5958,7 @@ msgstr "Ширину можна вказати в числах, пікселях
 #: desk/src/components/notifications/Notifications.vue
 msgid "You are all caught up!"
 msgstr "Ви все переглянули!"
+
+#: desk/src/components/ticket-agent/TicketDetailsTab.vue
+msgid "Enter {0}"
+msgstr "Введіть {0}"

@@ -74,6 +74,7 @@ import {
   TicketSymbol,
 } from "@/types";
 import { computed, inject, ref } from "vue";
+import { __ } from "@/translation";
 import TicketField from "../TicketField.vue";
 import AssignTo from "./AssignTo.vue";
 import TicketContact from "./TicketContact.vue";
@@ -144,15 +145,16 @@ const customFields = computed(() => {
 });
 
 function getFieldInFormat(fieldTemplate, fieldMeta) {
+  const rawLabel = fieldMeta?.label || fieldTemplate.fieldname;
   return {
-    label: fieldMeta?.label || fieldTemplate.fieldname,
+    label: __(rawLabel),
     value: ticket.value.doc[fieldTemplate.fieldname],
     fieldtype: fieldMeta?.fieldtype,
     doctype: fieldMeta?.options || "",
     options: fieldMeta?.options || "",
     placeholder:
       fieldTemplate.placeholder ||
-      `Enter ${fieldMeta?.label || fieldTemplate.fieldname}`,
+      __("Enter {0}", __(rawLabel)),
     readonly: Boolean(fieldMeta.read_only),
     disabled: Boolean(fieldMeta.read_only),
     url_method: fieldTemplate.url_method || "",
