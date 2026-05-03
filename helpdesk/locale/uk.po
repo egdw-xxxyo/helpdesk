@@ -5882,3 +5882,79 @@ msgstr "Вид {0} зараз публічний. Зміна на приватн
 msgid "{0} view is currently visible in the sidebar. Hiding it will remove it from the sidebar."
 msgstr "Вид {0} зараз видимий у бічній панелі. Приховання видалить його з бічної панелі."
 
+
+#: desk/src/pages/desk/customer/Customers.vue
+msgid "No Customers Found"
+msgstr "Клієнтів не знайдено"
+
+#: desk/src/pages/desk/contact/Contacts.vue
+msgid "No Contacts Found"
+msgstr "Контактів не знайдено"
+
+#: desk/src/pages/desk/contact/Contacts.vue
+msgid "Contact updated"
+msgstr "Контакт оновлено"
+
+#: desk/src/pages/call-logs/CallLogs.vue
+msgid "No Call Logs Found"
+msgstr "Журналів дзвінків не знайдено"
+
+#: desk/src/components/view-controls/Filter.vue
+msgid "Filter"
+msgstr "Фільтр"
+
+#: desk/src/components/view-controls/Filter.vue
+msgid "Where"
+msgstr "Де"
+
+#: desk/src/components/view-controls/Filter.vue
+msgid "And"
+msgstr "І"
+
+#: desk/src/components/view-controls/Filter.vue
+msgid "Empty - Choose a field to filter by"
+msgstr "Порожньо — виберіть поле для фільтрації"
+
+#: desk/src/components/view-controls/Filter.vue
+msgid "Add Filter"
+msgstr "Додати фільтр"
+
+#: desk/src/components/view-controls/Filter.vue
+msgid "Clear all Filter"
+msgstr "Очистити всі фільтри"
+
+#: desk/src/components/view-controls/SortBy.vue
+msgid "Sort"
+msgstr "Сортувати"
+
+#: desk/src/components/view-controls/SortBy.vue
+msgid "Empty - Choose a field to sort by"
+msgstr "Порожньо — виберіть поле для сортування"
+
+#: desk/src/components/view-controls/SortBy.vue
+msgid "Add Sort"
+msgstr "Додати сортування"
+
+#: desk/src/components/view-controls/SortBy.vue
+msgid "Clear Sort"
+msgstr "Очистити сортування"
+
+#: desk/src/components/view-controls/ColumnSettings.vue
+msgid "Add Column"
+msgstr "Додати стовпець"
+
+#: desk/src/components/view-controls/ColumnSettings.vue
+msgid "Reset to Default"
+msgstr "Скинути до типового"
+
+#: desk/src/components/view-controls/ColumnSettings.vue
+msgid "Width"
+msgstr "Ширина"
+
+#: desk/src/components/view-controls/ColumnSettings.vue
+msgid "Width can be in number, pixel or rem (eg. 3, 30px, 10rem)"
+msgstr "Ширину можна вказати в числах, пікселях чи rem (напр. 3, 30px, 10rem)"
+
+#: desk/src/components/notifications/Notifications.vue
+msgid "You are all caught up!"
+msgstr "Ви все переглянули!"

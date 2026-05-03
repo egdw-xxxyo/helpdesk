@@ -3,7 +3,7 @@
     <template #target="{ togglePopover, close }">
       <div class="flex items-center w-fit">
         <Button
-          :label="'Filter'"
+          :label="__('Filter')"
           :class="filters?.size ? 'rounded-r-none' : ''"
           @click="togglePopover"
         >
@@ -16,7 +16,7 @@
             </span>
           </template>
         </Button>
-        <Tooltip v-if="filters?.size" :text="'Clear all Filter'">
+        <Tooltip v-if="filters?.size" :text="__('Clear all Filter')">
           <div>
             <Button
               class="rounded-l-none border-l"
@@ -40,7 +40,7 @@
             <div v-if="isMobileView" class="flex flex-col gap-2">
               <div class="-mb-2 flex w-full items-center justify-between">
                 <div class="text-base text-gray-600">
-                  {{ i == 0 ? "Where" : "And" }}
+                  {{ i == 0 ? __("Where") : __("And") }}
                 </div>
                 <Button
                   class="flex"
@@ -79,7 +79,7 @@
             <div v-else class="flex items-center justify-between gap-2">
               <div class="flex items-center gap-2 flex-1">
                 <div class="w-13 pl-2 text-end text-base text-gray-600">
-                  {{ i == 0 ? "Where" : "And" }}
+                  {{ i == 0 ? __("Where") : __("And") }}
                 </div>
                 <div id="fieldname" class="!min-w-[140px]">
                   <Autocomplete
@@ -122,7 +122,7 @@
             v-else
             class="mb-3 flex h-7 items-center px-3 text-sm text-gray-600"
           >
-            {{ "Empty - Choose a field to filter by" }}
+            {{ __("Empty - Choose a field to filter by") }}
           </div>
           <div class="flex items-center justify-between gap-2">
             <Autocomplete
@@ -135,7 +135,7 @@
                   class="!text-gray-600"
                   variant="ghost"
                   @click="togglePopover()"
-                  :label="'Add Filter'"
+                  :label="__('Add Filter')"
                 >
                   <template #prefix>
                     <FeatherIcon name="plus" class="h-4" />
@@ -147,7 +147,7 @@
               v-if="filters?.size"
               class="!text-gray-600"
               variant="ghost"
-              :label="'Clear all Filter'"
+              :label="__('Clear all Filter')"
               @click="clearfilter(close)"
             />
           </div>
@@ -173,6 +173,7 @@ import {
 } from "frappe-ui";
 import { computed, h, inject } from "vue";
 import { useDebounceFn } from "@vueuse/core";
+import { __ } from "@/translation";
 
 const props = defineProps({
   default_filters: {
